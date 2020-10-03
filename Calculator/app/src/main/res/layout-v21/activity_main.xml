@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -28,10 +28,11 @@
                 android:textSize="24sp"
                 android:text="@string/clear"
                 android:layout_weight="1"
+                
                 android:background="@drawable/circle"
                 android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#DD2C00" tools:targetApi="lollipop" />
+                android:backgroundTint="#DD2C00"/>
 
             <Button
                 android:id="@+id/paranthesisBTN"
@@ -65,8 +66,7 @@
                 android:background="@drawable/circle"
                 android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"
-                tools:targetApi="lollipop" />
+                android:backgroundTint="#FF9500"/>
         </TableRow>
 
         <TableRow
@@ -116,8 +116,7 @@
                 android:background="@drawable/circle"
                 android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"
-                tools:ignore="UnusedAttribute" />
+                android:backgroundTint="#FF9500"/>
         </TableRow>
 
         <TableRow
@@ -168,8 +167,7 @@
                 android:background="@drawable/circle"
                 android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"
-                tools:ignore="UnusedAttribute" />
+                android:backgroundTint="#FF9500"/>
         </TableRow>
 
         <TableRow
@@ -219,8 +217,7 @@
                 android:background="@drawable/circle"
                 android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"
-                tools:ignore="UnusedAttribute" />
+                android:backgroundTint="#FF9500"/>
         </TableRow>
 
         <TableRow
@@ -265,45 +262,33 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/circle"
-                android:backgroundTint="#43A047"
                 android:text="@string/equals"
+                android:background="@drawable/circle"
                 android:textColor="#FFFF"
-                tools:ignore="UnusedAttribute,lollipop"
-                 />
+                android:layout_margin="5dp"
+                />
         </TableRow>
     </TableLayout>
 
-    <EditText
+    <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:autofillHints="false"
-        android:gravity="end"
-        android:inputType="none"
         android:text="@string/display"
-        android:textAlignment="textEnd"
-        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/button21"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/circle"
-        android:contentDescription="@string/backspace"
+        android:text="@string/backspace"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/backspace" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
