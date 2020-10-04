@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/input"
         app:layout_constraintVertical_bias="0.95"
         tools:layout_editor_absoluteX="1dp">
 
@@ -25,48 +24,51 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:textSize="24sp"
-                android:text="@string/clear"
-                android:layout_weight="1"
-                
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#DD2C00"/>
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#DD2C00"
+                android:onClick="clearBTN"
+                android:text="@string/clear"
+                android:textColor="#FFFF"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/paranthesisBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/paranthesis"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="parBTN"
+                android:text="@string/paranthesis"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/exponentBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/exponent"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="expBTN"
+                android:text="@string/exponent"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/divideBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/divide"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"/>
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#FF9500"
+                android:onClick="divideBTN"
+                android:text="@string/divide"
+                android:textColor="#FFFF" />
         </TableRow>
 
         <TableRow
@@ -78,45 +80,49 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/seven"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="sevenBTN"
+                android:text="@string/seven"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/eightBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/eight"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="eightBTN"
+                android:text="@string/eight"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/nineBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/nine"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="nineBTN"
+                android:text="@string/nine"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/multiplyBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/multiply"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"/>
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#FF9500"
+                android:onClick="multiplyBTN"
+                android:text="@string/multiply"
+                android:textColor="#FFFF" />
         </TableRow>
 
         <TableRow
@@ -128,46 +134,49 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/four"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                />
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="fourBTN"
+                android:text="@string/four"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/fiveBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/five"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="fiveBTN"
+                android:text="@string/five"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/sixBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/six"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="sixBTN"
+                android:text="@string/six"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/subtractBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/subtract"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"/>
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#FF9500"
+                android:onClick="subtractBTN"
+                android:text="@string/subtract"
+                android:textColor="#FFFF" />
         </TableRow>
 
         <TableRow
@@ -179,45 +188,49 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/one"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="oneBTN"
+                android:text="@string/one"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/twoBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/two"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="twoBTN"
+                android:text="@string/two"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/threeBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/three"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="threeBTN"
+                android:text="@string/three"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/addBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/add"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                android:backgroundTint="#FF9500"/>
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#FF9500"
+                android:onClick="addBTN"
+                android:text="@string/add"
+                android:textColor="#FFFF" />
         </TableRow>
 
         <TableRow
@@ -229,66 +242,81 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/plusMinus"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="plusMinusBTN"
+                android:text="@string/plusMinus"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/zeroBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/zero"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="zeroBTN"
+                android:text="@string/zero"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/pointBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="@string/point"
                 android:background="@drawable/circle"
-                android:textColor="#FFFF"
-                android:layout_margin="5dp"/>
+                android:onClick="pointBTN"
+                android:text="@string/point"
+                android:textColor="#FFFF" />
 
             <Button
                 android:id="@+id/equalsBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="@string/equals"
-                android:background="@drawable/circle"
-                android:textColor="#FFFF"
                 android:layout_margin="5dp"
-                />
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="#43A047"
+                android:onClick="equalBTN"
+                android:text="@string/equals"
+                android:textColor="#FFFF" />
         </TableRow>
     </TableLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:autofillHints="false"
+        android:gravity="end"
+        android:inputType="none"
         android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button21"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/backspace"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/backspace"
+        android:onClick="backspaceBTN"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backspace" />
 </androidx.constraintlayout.widget.ConstraintLayout>
